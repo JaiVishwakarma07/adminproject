@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your App</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- Login Page -->
+        <div id="loginPage">
+            <div class="left"></div>
+            <div class="right">
+                <h1>Login</h1>
+                <form id="loginForm">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" required>
+                    <button type="button" onclick="login()">Login</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Admin Dashboard -->
+        <div id="adminDashboard" style="display: none;">
+            <h2>Welcome, Admin!</h2>
+            <table>
+
+            </table>
+        </div>
+
+        <!-- User Profile Update Page -->
+        <div id="userProfilePage" style="display: none;">
+            <h2>User Profile Update</h2>
+            <form id="profileForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="photo">Photo URL:</label>
+                <input type="text" id="photo" required>
+                <button type="button" onclick="submitProfile()">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
